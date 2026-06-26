@@ -1,0 +1,28 @@
+Source: dory-share
+Section: gnome
+Priority: optional
+Maintainer: Clement Lefebvre <root@linuxmint.com>
+Build-Depends:
+ debhelper-compat (= 12),
+ libcinnamon-desktop-dev (>= 3.0.0),
+ libglib2.0-dev (>= 2.35.9),
+ libdory-extension-dev,
+ meson,
+Standards-Version: 3.9.6
+
+Package: dory-share
+Architecture: any
+Depends:
+${misc:Depends},
+${shlibs:Depends},
+ aptkit,
+ gir1.2-cinnamondesktop-3.0,
+ dory,
+ pkexec,
+ samba-common (>= 3.0.27a),
+ samba-common-bin | samba-common (<< 2:3.4.0~pre2-1~0),
+Enhances: dory
+Suggests: samba (>= 3.0.27a)
+Description: Dory extension to share folder using Samba
+ Dory Share allows you to quickly share a folder from
+ the Dory file manager without requiring root access.

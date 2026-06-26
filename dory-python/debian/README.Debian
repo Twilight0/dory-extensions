@@ -1,0 +1,12 @@
+dory-python for Debian
+--------------------------
+
+Plugins are loaded by default from two locations:
+
+ /usr/share/dory-python/extensions - all-user plugin directory
+ ~/.local/share/dory-python/extensions - per-user plugin directory
+
+Sample plugins can be found in /usr/share/doc/python-dory/examples. To use
+them, copy them to one of the locations above and restart dory--this can
+be done gracefully by running 'dory --quit'.
+

@@ -1,0 +1,8 @@
+[Dory Action]
+Name=Verify Signature
+Comment=Verify the signature of the selected file
+Active=true
+Exec=dory-seahorse-tool --verify %U
+Icon-Name=xsi-certificate-symbolic
+Selection=notnone
+Extensions=sig;asc;

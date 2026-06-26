@@ -1,25 +1,25 @@
-# Nemo Extensions
+# Dory Extensions
 
 ## Status
 
-- nemo-wallpaper: (built in to Nemo)
-- nemo-dropbox: functional
-- nemo-fileroller: functional
-- nemo-seahorse: functional
-- nemo-share: functional
-- nemo-pastebin: functional
-- nemo-compare: functional
-- nemo-python (python bindings for Nemo): functional
-- nemo-terminal: functional (forked from nautilus-terminal-1.0.0)
-- nemo-filename-repairer forked from (nautilus-filename-repairer-0.0.6)
-- nemo-image-converter forked from (nautilus-image-converter-0.3.1)
-- nemo-audio-tab forked from nemo-media-columns and nemo-emblems
+- dory-wallpaper: (built in to Dory)
+- dory-dropbox: functional
+- dory-fileroller: functional
+- dory-seahorse: functional
+- dory-share: functional
+- dory-pastebin: functional
+- dory-compare: functional
+- dory-python (python bindings for Dory): functional
+- dory-terminal: functional (forked from nautilus-terminal-1.0.0)
+- dory-filename-repairer forked from (nautilus-filename-repairer-0.0.6)
+- dory-image-converter forked from (nautilus-image-converter-0.3.1)
+- dory-audio-tab forked from dory-media-columns and dory-emblems
 
 ## NOT YET INCLUDED:
 
-- nemo-bzr: part of bzr-gtk, needs to be isolated from it
+- dory-bzr: part of bzr-gtk, needs to be isolated from it
 
-## NAUTILUS EXTENSIONS MISSING IN NEMO:
+## NAUTILUS EXTENSIONS MISSING IN DORY:
 
 - nautilus-actions                - nautilus extension to configure programs t
 - nautilus-clamscan               - Antivirus scanning for Nautilus

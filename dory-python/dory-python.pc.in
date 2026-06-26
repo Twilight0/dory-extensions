@@ -1,0 +1,7 @@
+Name: Dory-Python
+Description: Dory-Python Components
+Version: @version@
+
+prefix=@prefix@
+libdir=${prefix}/lib
+pythondir=${prefix}/share/dory-python/extensions

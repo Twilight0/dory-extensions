@@ -1,0 +1,4 @@
+dory-seahorse: pkg-has-shlibs-control-file-but-no-actual-shared-libs
+dory-seahorse: postinst-has-useless-call-to-ldconfig
+dory-seahorse: postrm-has-useless-call-to-ldconfig
+

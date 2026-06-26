@@ -1,0 +1,4 @@
+/src/dory-compare.py /usr/share/dory-compare/
+/src/utils.py /usr/share/dory-compare/
+/src/dory-compare-preferences.py /usr/share/dory-compare/
+

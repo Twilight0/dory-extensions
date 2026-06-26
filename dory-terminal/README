@@ -1,0 +1,42 @@
+==============================================================================
+=        Dory Terminal - Embedded terminal for the Dory file browser         =
+==============================================================================
+
+Dory Terminal is an embedded terminal for Dory, the Cinnamon file manager.
+
+Dory Terminal follows your navigation in a shell accessible by hotkey (F4, by
+default) in a resizeable pane in Dory. It eliminates the grunt work of
+navigating multiple folder levels just to run a single shell command and cuts
+down on window clutter from multiple terminals and file managers.
+
+Features include:
+    * Automatically follows folder navigation.
+        * Even onto GVFS mounted volumes.
+    * Copy/Paste and Paste Filename support.
+    * Drag/Drop acquisition of filenames from Dory.
+
+Features in development:
+    * Two-way folder navigation - Dory will follow the current directory in the
+      terminal.
+
+This package is a fork of the Nautilus Terminal project to support the Dory
+file browser and includes various improvements and bugfixes.
+
+Credit for the original work goes to the Nautilus Terminal authors
+(see AUTHORS for more detail).
+
+Source code may be obtained for dory-terminal and nautilus-terminal from their
+websites:
+
+Dory Terminal Web Site: http://github.com/linuxmint/dory-extensions/
+
+Nautilus Terminal Web Site: http://projects.flogisoft.com/nautilus-terminal/
+
+Dependencies:
+-------------
+    * Python (>= 2.6) <http://python.org/>
+    * GObject Introspection <https://wiki.gnome.org/GObjectIntrospection>
+    * VTE <https://wiki.gnome.org/Apps/Terminal/VTE>
+    * Dory <https://github.com/linuxmint/dory>
+    * Dory Python <https://github.com/linuxmint/dory-extensions/tree/master/dory-python>
+    * PyXDG (optional) <http://www.freedesktop.org/wiki/Software/pyxdg>

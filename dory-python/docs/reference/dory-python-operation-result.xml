@@ -1,0 +1,59 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE refentry PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN"
+    "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd">
+
+<refentry id="enum-dory-python-operation-result">
+  <refmeta>
+    <refentrytitle>Dory.OperationResult</refentrytitle>
+  </refmeta>
+  <refnamediv>
+    <refname>Dory.OperationResult</refname>
+    <refpurpose>Dory.OperationResult Reference</refpurpose>
+  </refnamediv>
+
+
+
+<!-- ********************************** -->
+<!-- BEGIN OF DESCRIPTION -->
+<!-- ********************************** -->
+
+  <refsect1 id="description-operation-result">
+    <title>Description</title>
+
+      <para>
+        The <link linkend="enum-dory-python-operation-result"><classname>Dory.OperationResult</classname></link> constants are
+        used by the <link linkend="class-dory-python-info-provider"><classname>Dory.InfoProvider</classname></link> provider to
+        notify Dory what the extension intends to do when Dory calls the extension's <link linkend="method-dory-python-info-provider--update-file-info-full">update_file_info_full</link>
+        method.  The possible values are as follows:
+      </para>
+
+
+      <variablelist>
+	    <varlistentry>
+	      <term><literal>Dory.OperationResult.COMPLETE</literal></term>
+	      <listitem>
+	        <simpara>The operation is complete and Dory can move on to the next <link linkend="method-dory-python-info-provider--update-file-info-full">update_file_info_full</link> call.</simpara>
+	      </listitem>
+	    </varlistentry>
+	    <varlistentry>
+	      <term><literal>Dory.OperationResult.IN_PROGRESS</literal></term>
+	      <listitem>
+	        <simpara>The operation is in progress and running asynchronously and Dory should wait until the <link linkend="method-dory-python-info-provider--update-complete-invoke">Dory.info_provider_update_complete_invoke</link> method
+	        is called before moving on to the next <link linkend="method-dory-python-info-provider--update-file-info-full">update_file_info_full</link> call.</simpara>
+	      </listitem>
+	    </varlistentry>
+	    <varlistentry>
+	      <term><literal>Dory.OperationResult.FAILED</literal></term>
+	      <listitem>
+	        <simpara>The operation has failed.</simpara>
+	      </listitem>
+	    </varlistentry>
+	    </variablelist>
+  </refsect1>
+
+
+
+
+
+</refentry>
+

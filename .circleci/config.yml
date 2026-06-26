@@ -14,7 +14,7 @@ shared: &shared
         command: |
             wget https://github.com/linuxmint/xapps/releases/download/master.${CIRCLE_JOB}/packages.tar.gz -O xapps.tar.gz
             wget https://github.com/linuxmint/cinnamon-desktop/releases/download/master.${CIRCLE_JOB}/packages.tar.gz -O cinnamon-desktop.tar.gz
-            wget https://github.com/linuxmint/nemo/releases/download/master.${CIRCLE_JOB}/packages.tar.gz -O nemo.tar.gz
+            wget https://github.com/linuxmint/dory/releases/download/master.${CIRCLE_JOB}/packages.tar.gz -O dory.tar.gz
             ls *.tar.gz | xargs -i tar zxvf {}
             apt install --yes --allow-downgrades ./packages/*.deb
             rm -rf packages

@@ -1,19 +1,19 @@
 #!/usr/bin/env bash
 set -Eeuo pipefail
 
-pot="nemo-extensions.pot"
+pot="dory-extensions.pot"
 
 rm -f ${pot}
 touch ${pot}
 
 potfiles_to_extract=(
-    nemo-audio-tab/nemo-extension/nemo-audio-tab.glade
-    nemo-image-converter/data/nemo-image-resize.ui
-    nemo-image-converter/data/nemo-image-rotate.ui
-    nemo-pastebin/data/nemo-pastebin-configurator.ui
-    nemo-repairer/src/encoding-dialog.ui
-    nemo-repairer/src/repair-dialog.ui
-    nemo-share/interfaces/share-dialog.ui
+    dory-audio-tab/dory-extension/dory-audio-tab.glade
+    dory-image-converter/data/dory-image-resize.ui
+    dory-image-converter/data/dory-image-rotate.ui
+    dory-pastebin/data/dory-pastebin-configurator.ui
+    dory-repairer/src/encoding-dialog.ui
+    dory-repairer/src/repair-dialog.ui
+    dory-share/interfaces/share-dialog.ui
 )
 
 potfiles_extracted=( )
@@ -23,43 +23,43 @@ for file in "${potfiles_to_extract[@]}"; do
 done
 
 potfiles_c=(
-    nemo-dropbox/src/*.c
-    nemo-dropbox/src/*.h
-    nemo-fileroller/src/*.c
-    nemo-fileroller/src/*.h
-    nemo-image-converter/data/*.ui.h
-    nemo-image-converter/src/*.c
-    nemo-image-converter/src/*.h
-    nemo-preview/src/*.c
-    nemo-preview/src/libnemo-preview/*.c
-    nemo-preview/src/libnemo-preview/*.h
-    nemo-repairer/src/*.c
-    nemo-repairer/src/*.h
-    nemo-repairer/src/*.ui.h
-    nemo-share/interfaces/*.ui.h
-    nemo-share/src/*.c
-    nemo-share/src/*.h
+    dory-dropbox/src/*.c
+    dory-dropbox/src/*.h
+    dory-fileroller/src/*.c
+    dory-fileroller/src/*.h
+    dory-image-converter/data/*.ui.h
+    dory-image-converter/src/*.c
+    dory-image-converter/src/*.h
+    dory-preview/src/*.c
+    dory-preview/src/libdory-preview/*.c
+    dory-preview/src/libdory-preview/*.h
+    dory-repairer/src/*.c
+    dory-repairer/src/*.h
+    dory-repairer/src/*.ui.h
+    dory-share/interfaces/*.ui.h
+    dory-share/src/*.c
+    dory-share/src/*.h
 )
 potfiles_python=(
-    nemo-audio-tab/nemo-extension/*.glade.h
-    nemo-audio-tab/nemo-extension/*.py
-    nemo-compare/src/*.py
-    nemo-emblems/nemo-extension/*.py
-    nemo-media-columns/*.py
-    nemo-pastebin/*.py
-    nemo-pastebin/src/*.py
-    nemo-pastebin/data/*.ui.h
-    nemo-seahorse/tool/nemo-seahorse-tool
-    nemo-terminal/src/*.py
+    dory-audio-tab/dory-extension/*.glade.h
+    dory-audio-tab/dory-extension/*.py
+    dory-compare/src/*.py
+    dory-emblems/dory-extension/*.py
+    dory-media-columns/*.py
+    dory-pastebin/*.py
+    dory-pastebin/src/*.py
+    dory-pastebin/data/*.ui.h
+    dory-seahorse/tool/dory-seahorse-tool
+    dory-terminal/src/*.py
     generate_desktop_files
 )
 potfiles_javascript=(
-    nemo-preview/src/js/*/*.js
+    dory-preview/src/js/*/*.js
 )
 
 xgettext --language=C           --keyword=_ --keyword=N_ --keyword=g_dngettext:2,3 --output="$pot" --join-existing "${potfiles_c[@]}"
 xgettext --language=JavaScript  --keyword=_ --keyword=N_ --output="$pot" --join-existing "${potfiles_javascript[@]}"
 xgettext --language=Python      --keyword=_ --keyword=N_ --output="$pot" --join-existing "${potfiles_python[@]}"
-xgettext --language=Desktop                                --output="$pot" --join-existing nemo-seahorse/data/*.nemo_action
+xgettext --language=Desktop                                --output="$pot" --join-existing dory-seahorse/data/*.dory_action
 
 rm -f "${potfiles_extracted[@]}"

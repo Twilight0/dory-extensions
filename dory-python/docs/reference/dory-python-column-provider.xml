@@ -1,0 +1,108 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE refentry PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN"
+    "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd">
+
+<refentry id="class-dory-python-column-provider">
+  <refmeta>
+    <refentrytitle>Dory.ColumnProvider</refentrytitle>
+  </refmeta>
+  <refnamediv>
+    <refname>Dory.ColumnProvider</refname>
+    <refpurpose>Dory.ColumnProvider Reference</refpurpose>
+  </refnamediv>
+
+<!-- ******************************* -->
+<!-- BEGIN OF SYNOPSIS -->
+<!-- ******************************* -->
+
+  <refsect1>
+    <title>Synopsis</title>
+
+    <classsynopsis language="python">
+      <ooclass><classname>Dory.ColumnProvider</classname></ooclass>
+
+      <methodsynopsis language="python">
+        <methodname><link linkend="method-dory-column-provider--get-columns">get_columns</link></methodname>
+          <methodparam></methodparam>
+      </methodsynopsis>
+    </classsynopsis>
+  </refsect1>
+
+<!-- ********************************** -->
+<!-- BEGIN OF DESCRIPTION -->
+<!-- ********************************** -->
+
+  <refsect1 id="description-column-provider">
+    <title>Description</title>
+
+      <para>
+        If subclassed, Dory will request a list of <link linkend="class-dory-python-column"><classname>Dory.Column</classname></link> 
+        objects, which are then displayed when the user is in <literal>List</literal> mode.
+        
+        <note>An extension sub-classing <link linkend="class-dory-python-column-provider"><classname>Dory.ColumnProvider</classname></link> 
+        will almost always want to sub-class <link linkend="class-info-provider"><classname>Dory.InfoProvider</classname></link> 
+        as well, since that is how an extension provides information for each item in a directory listing.
+        </note>
+        </para>
+
+<example>
+    <title>Dory.ColumnProvider Example</title>
+    <programlisting>
+import os
+import urllib
+
+from gi.repository import Dory, GObject
+
+class ColumnExtension(GObject.GObject, Dory.ColumnProvider, Dory.InfoProvider):
+    def __init__(self):
+        pass
+    
+    def get_columns(self):
+        return Dory.Column(name="DoryPython::block_size_column",
+                               attribute="block_size",
+                               label="Block size",
+                               description="Get the block size"),
+
+    def update_file_info(self, file):
+        if file.get_uri_scheme() != 'file':
+            return
+        
+        filename = urllib.unquote(file.get_uri()[7:])
+        
+        file.add_string_attribute('block_size', str(os.stat(filename).st_blksize))
+    </programlisting>
+</example>
+        
+  </refsect1>
+
+<!-- ****************************** -->
+<!-- BEGIN OF METHODS -->
+<!-- ****************************** -->
+
+  <refsect1>
+        <title>Passive Methods</title>
+
+        <refsect2 id="method-dory-column-provider--get-columns">
+          <title>Dory.ColumnProvider.get_columns</title>
+
+          <programlisting><methodsynopsis language="python">
+            <methodname>get_columns</methodname>
+              <methodparam></methodparam>
+          </methodsynopsis></programlisting>
+
+          <variablelist>
+            <varlistentry>
+              <term><emphasis>Returns</emphasis>&nbsp;:</term>
+              <listitem><simpara>a list of <literal>Dory.Column</literal></simpara></listitem>
+            </varlistentry>
+          </variablelist>
+
+          <para>
+            The <methodname>get_columns</methodname>() method returns a list of
+            <link linkend="class-dory-python-column"><classname>Dory.Column</classname></link>.
+          </para>
+        </refsect2>
+    </refsect1>
+
+</refentry>
+

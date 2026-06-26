@@ -1,0 +1,5 @@
+dory-seahorse is an extension for Dory which allows encryption
+and decryption of OpenPGP files using GnuPG.
+
+dory-seahorse is a fork of seahorse-nautilus 3.3.1.
+

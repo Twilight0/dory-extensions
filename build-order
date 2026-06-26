@@ -1,16 +1,16 @@
-# nemo-python is needed for some of the
+# dory-python is needed for some of the
 # subprojects to install properly.
-nemo-python
-nemo-audio-tab
-nemo-compare
-nemo-dropbox
-nemo-emblems
-nemo-fileroller
-nemo-image-converter
-nemo-media-columns
-nemo-pastebin
-nemo-preview
-nemo-repairer
-nemo-seahorse
-nemo-share
-nemo-terminal
+dory-python
+dory-audio-tab
+dory-compare
+dory-dropbox
+dory-emblems
+dory-fileroller
+dory-image-converter
+dory-media-columns
+dory-pastebin
+dory-preview
+dory-repairer
+dory-seahorse
+dory-share
+dory-terminal

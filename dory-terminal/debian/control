@@ -1,0 +1,26 @@
+Source: dory-terminal
+Section: gnome
+Priority: optional
+Maintainer: Clement Lefebvre <root@linuxmint.com>
+Build-Depends: debhelper (>= 9),
+               python3-all,
+               python3-setuptools,
+               dh-python
+Standards-Version: 3.9.4
+Homepage: https://github.com/linuxmint/dory-extensions
+
+Package: dory-terminal
+Architecture: all
+Depends: ${misc:Depends},
+		 python3 ( >= 3.4),
+		 python-dory (>= 3.9.0),
+         gir1.2-dory-3.0,
+		 gir1.2-vte-2.91,
+		 gir1.2-gtk-3.0 (>= 3.8.4~),
+		 gir1.2-glib-2.0 (>= 1.38.0~),
+         gir1.2-xapp-1.0 (>= 1.1.0)
+Description: Dory extension to enable an embedded terminal
+ Dory Terminal is an embedded terminal for Dory, the Cinnamon file manager.
+ It embeds a terminal pane into Dory that is accessible by hotkey (default F4)
+ and automatically follows the currently active directory in Dory.
+

@@ -1,0 +1,101 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE refentry PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN"
+    "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd">
+
+<refentry id="class-dory-python-location-widget-provider">
+  <refmeta>
+    <refentrytitle>Dory.LocationWidgetProvider</refentrytitle>
+  </refmeta>
+  <refnamediv>
+    <refname>Dory.LocationWidgetProvider</refname>
+    <refpurpose>Dory.LocationWidgetProvider Reference</refpurpose>
+  </refnamediv>
+
+<!-- ******************************* -->
+<!-- BEGIN OF SYNOPSIS -->
+<!-- ******************************* -->
+
+  <refsect1>
+    <title>Synopsis</title>
+
+    <classsynopsis language="python">
+      <ooclass><classname>Dory.LocationWidgetProvider</classname></ooclass>
+
+      <methodsynopsis language="python">
+        <methodname><link linkend="method-dory-location-widget-provider--get-widget">get_widget</link></methodname>
+        <methodparam><parameter role="keyword">uri</parameter></methodparam>
+        <methodparam><parameter role="keyword">window</parameter></methodparam>
+      </methodsynopsis>
+    </classsynopsis>
+  </refsect1>
+
+<!-- ********************************** -->
+<!-- BEGIN OF DESCRIPTION -->
+<!-- ********************************** -->
+
+  <refsect1 id="description-location-widget-provider">
+    <title>Description</title>
+
+      <para>
+      If subclassed, Dory will request a widget to be displayed at the top of the directory listing.
+      </para>
+
+<example>
+    <title>Dory.LocationWidgetProvider Example</title>
+    <programlisting>
+from gi.repository import Dory, GObject, Gtk
+
+class ColumnExtension(GObject.GObject, Dory.LocationWidgetProvider):
+    def __init__(self):
+        pass
+    
+    def get_widget(self, uri, window):
+        entry = Gtk.Entry()
+        entry.set_text(uri)
+        entry.show()
+        return entry
+    </programlisting>
+</example>
+        
+  </refsect1>
+
+<!-- ****************************** -->
+<!-- BEGIN OF METHODS -->
+<!-- ****************************** -->
+
+  <refsect1>
+        <title>Passive Methods</title>
+
+        <refsect2 id="method-dory-location-widget-provider--get-widget">
+          <title>Dory.LocationWidgetProvider.get_widget</title>
+
+          <programlisting><methodsynopsis language="python">
+            <methodname>get_widget</methodname>
+            <methodparam><parameter role="keyword">uri</parameter></methodparam>
+            <methodparam><parameter role="keyword">window</parameter></methodparam>
+          </methodsynopsis></programlisting>
+
+          <variablelist>
+            <varlistentry>
+	            <term><parameter role="keyword">uri</parameter>&nbsp;:</term>
+	            <listitem><simpara>the current folder uri</simpara></listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><parameter role="keyword">window</parameter>&nbsp;:</term>
+                <listitem><simpara>the current <link linkend="class-gtkwindow"><classname>gtk.Window</classname></link> instance</simpara></listitem>
+            </varlistentry>
+            <varlistentry>
+              <term><emphasis>Returns</emphasis>&nbsp;:</term>
+              <listitem><simpara>a <link linkend="class-gtk-widget"><classname>gtk.Widget</classname></link> object</simpara></listitem>
+            </varlistentry>
+          </variablelist>
+
+          <para>
+                This function is called by Dory when it wants a location widget from the extension.  
+                It is called in the main thread before a directory listing is shown, so it should return quickly.
+          </para>
+        </refsect2>
+    </refsect1>
+
+</refentry>
+

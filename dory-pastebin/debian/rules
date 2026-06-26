@@ -1,0 +1,10 @@
+#!/usr/bin/make -f
+
+export PYBUILD_NAME=dory-pastebin
+
+%:
+	dh $@ --with python3 --buildsystem=pybuild
+
+override_dh_install:
+	for file in $$(cd po; ls *.po; cd ..); do echo debian/dory-pastebin/usr/share/locale/$${file%.po}/LC_MESSAGES; mkdir -p debian/dory-pastebin/usr/share/locale/$${file%.po}/LC_MESSAGES; msgfmt -f -o debian/dory-pastebin/usr/share/locale/$${file%.po}/LC_MESSAGES/dory-pastebin.mo po/$$file; done
+	dh_install

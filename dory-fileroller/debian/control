@@ -1,0 +1,19 @@
+Source: dory-fileroller
+Section: misc
+Priority: optional
+Maintainer: Clement Lefebvre <root@linuxmint.com>
+Build-Depends:
+    debhelper-compat (= 12),
+    meson,
+    libglib2.0-dev (>= 2.14.0),
+    libdory-extension-dev (>= 1.0.0),
+Standards-Version: 3.9.6
+
+Package: dory-fileroller
+Architecture: any
+Depends: file-roller, dory, ${misc:Depends}, ${shlibs:Depends}
+Recommends: cinnamon-l10n
+Description: File Roller integration for Dory
+ Dory File Roller is an Dory extension which allows you to create and extract
+ archives in Dory. This extension adds "Extract Here" (for archive files) and
+ "Compress..." items to the right-click menu.

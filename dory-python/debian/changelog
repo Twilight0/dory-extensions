@@ -1,0 +1,191 @@
+dory-python (6.7.0) unstable; urgency=medium
+
+  * 6.7.0
+
+ -- Clement Lefebvre <root@linuxmint.com>  Mon, 13 Apr 2026 14:29:41 +0100
+
+dory-python (6.6.0) zena; urgency=medium
+
+  * 6.6.0
+
+ -- Clement Lefebvre <root@linuxmint.com>  Tue, 25 Nov 2025 14:48:32 +0000
+
+dory-python (6.4.0) xia; urgency=medium
+
+  * 6.4.0
+
+ -- Clement Lefebvre <root@linuxmint.com>  Tue, 26 Nov 2024 12:54:35 +0000
+
+dory-python (6.2.0) wilma; urgency=medium
+
+  * 6.2.0
+
+ -- Clement Lefebvre <root@linuxmint.com>  Thu, 13 Jun 2024 11:50:50 +0100
+
+dory-python (6.0.1) virginia; urgency=medium
+
+  * 6.0.1
+
+ -- Clement Lefebvre <root@linuxmint.com>  Fri, 15 Dec 2023 15:49:59 +0000
+
+dory-python (6.0.0) virginia; urgency=medium
+
+  * 6.0.0
+
+ -- Clement Lefebvre <root@linuxmint.com>  Sun, 19 Nov 2023 14:33:20 +0000
+
+dory-python (5.8.0) victoria; urgency=medium
+
+  * 5.8.0
+
+ -- Clement Lefebvre <root@linuxmint.com>  Thu, 01 Jun 2023 14:10:40 +0100
+
+dory-python (5.6.0) vera; urgency=medium
+
+  * 5.6.0
+
+ -- Clement Lefebvre <root@linuxmint.com>  Fri, 18 Nov 2022 12:10:50 +0000
+
+dory-python (5.4.1) vanessa; urgency=medium
+
+  * 5.4.1
+
+ -- Clement Lefebvre <root@linuxmint.com>  Fri, 15 Jul 2022 16:03:26 +0200
+
+dory-python (5.4.0) vanessa; urgency=medium
+
+  * 5.4.0
+
+ -- Clement Lefebvre <root@linuxmint.com>  Fri, 10 Jun 2022 15:14:05 +0200
+
+dory-python (5.2.0) una; urgency=medium
+
+  * 5.2.0
+
+ -- Clement Lefebvre <root@linuxmint.com>  Mon, 15 Nov 2021 13:29:51 +0000
+
+dory-python (5.0.1) uma; urgency=medium
+
+  * 5.0.1
+
+ -- Clement Lefebvre <root@linuxmint.com>  Wed, 21 Jul 2021 17:09:37 +0100
+
+dory-python (5.0.0) uma; urgency=medium
+
+  * 5.0.0
+
+ -- Clement Lefebvre <root@linuxmint.com>  Mon, 31 May 2021 12:43:26 +0100
+
+dory-python (4.8.0) ulyssa; urgency=medium
+
+  * 4.8.0
+
+ -- Clement Lefebvre <root@linuxmint.com>  Thu, 26 Nov 2020 14:15:23 +0000
+
+dory-python (4.6.0) ulyana; urgency=medium
+
+  * 4.6.0
+
+ -- Clement Lefebvre <root@linuxmint.com>  Wed, 13 May 2020 14:19:45 +0100
+
+dory-python (4.4.0) tricia; urgency=medium
+
+  * 4.4.0
+
+ -- Clement Lefebvre <root@linuxmint.com>  Sat, 16 Nov 2019 15:58:14 +0100
+
+dory-python (4.2.1) tina; urgency=medium
+
+  * 4.2.1
+
+ -- Clement Lefebvre <root@linuxmint.com>  Wed, 10 Jul 2019 12:13:15 +0200
+
+dory-python (4.2.0) tina; urgency=medium
+
+  * 4.2.0
+
+ -- Clement Lefebvre <root@linuxmint.com>  Sun, 23 Jun 2019 15:51:10 +0200
+
+dory-python (4.0.0) tessa; urgency=medium
+
+  * 4.0.0
+
+ -- Clement Lefebvre <root@linuxmint.com>  Thu, 01 Nov 2018 13:53:56 +0000
+
+dory-python (3.8.0) tara; urgency=medium
+
+  * 3.8.0
+
+ -- Clement Lefebvre <root@linuxmint.com>  Tue, 01 May 2018 13:09:45 +0100
+
+dory-python (3.6.0) sylvia; urgency=medium
+
+  * 3.6.0
+
+ -- Clement Lefebvre <root@linuxmint.com>  Tue, 24 Oct 2017 11:58:54 +0100
+
+dory-python (3.4.0) sonya; urgency=medium
+
+  * 3.4.0
+
+ -- Clement Lefebvre <root@linuxmint.com>  Thu, 04 May 2017 11:50:15 +0100
+
+dory-python (3.2.0) serena; urgency=medium
+
+  * 3.2.0
+
+ -- Clement Lefebvre <root@linuxmint.com>  Mon, 07 Nov 2016 11:42:31 +0000
+
+dory-python (3.0.0) sarah; urgency=medium
+
+  * 3.0.0
+
+ -- Clement Lefebvre <root@linuxmint.com>  Sun, 24 Apr 2016 12:54:08 +0100
+
+dory-python (2.8.0) rosa; urgency=medium
+
+  * 2.8.0
+
+ -- Clement Lefebvre <root@linuxmint.com>  Mon, 19 Oct 2015 23:27:25 +0100
+
+dory-python (2.6.0) rafaela; urgency=medium
+
+  * 2.6.0
+
+ -- Clement Lefebvre <root@linuxmint.com>  Tue, 02 Jun 2015 13:43:58 +0200
+
+dory-python (2.4.1) rebecca; urgency=medium
+
+  * Fix libdirsuffix for i386
+
+ -- Clement Lefebvre <root@linuxmint.com>  Wed, 12 Nov 2014 01:16:32 +0100
+
+dory-python (2.4.0) rebecca; urgency=medium
+
+  * 2.4.0
+
+ -- Clement Lefebvre <root@linuxmint.com>  Sat, 01 Nov 2014 11:40:04 +0100
+
+dory-python (2.2.0) qiana; urgency=medium
+
+  * 2.2.0
+
+ -- Clement Lefebvre <root@linuxmint.com>  Sat, 12 Apr 2014 16:22:20 +0100
+
+dory-python (2.0.0) petra; urgency=low
+
+  * 2.0.0
+
+ -- Clement Lefebvre <root@linuxmint.com>  Mon, 30 Sep 2013 15:45:52 +0100
+
+dory-python (1.8.0) olivia; urgency=low
+
+  * 1.8.0
+
+ -- Clement Lefebvre <root@linuxmint.com>  Tue, 16 Apr 2013 10:42:53 +0100
+
+dory-python (1.0-0) unstable; urgency=low
+
+  * Initial port to Dory
+
+ -- Clement Lefebvre <root@linuxmint.com>  Wed, 17 Oct 2012 18:00:00 -0500

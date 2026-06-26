@@ -1,0 +1,17 @@
+libdory-extension Python bindings
+====================================
+
+These are unstable bindings for the Dory extension library.
+
+For examples and documentation check the examples sub directory.
+
+As of dory-python 0.7.0, scripts are also loaded from $XDG_DATA_DIRS/dory-python/extensions,
+which includes ~/.local/share and /usr/share (or whatever your $XDG_DATA_DIRS is 
+set to).
+
+Try to copy test.py to that directory for an example
+
+Problems
+========
+It's currently not possible to reload the python file without
+restarting dory.
