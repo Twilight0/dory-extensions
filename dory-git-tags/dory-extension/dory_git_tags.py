@@ -21,7 +21,7 @@ import subprocess
 import threading
 from urllib import parse
 
-from gi.repository import GObject, Gio, GLib
+from gi.repository import GObject, Gio, GLib, Dory
 
 from gettext import gettext as _
 
