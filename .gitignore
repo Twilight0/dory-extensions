@@ -29,3 +29,4 @@ dory-seahorse/debian/dory-seahorse/
 dory-share/debian/dory-share/
 dory-terminal/debian/dory-terminal/
 tmp/
+__pycache__/
