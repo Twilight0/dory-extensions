@@ -86,7 +86,7 @@
             <property name="xpad">6</property>
             <property name="label" translatable="yes">Share this _folder</property>
             <property name="use_underline">True</property>
-            <property name="mdorynic_widget">entry_share_name</property>
+            <property name="mnemonic_widget">entry_share_name</property>
             <property name="ellipsize">end</property>
             <property name="xalign">0</property>
           </object>
@@ -133,7 +133,7 @@
                 <property name="can_focus">False</property>
                 <property name="label" translatable="yes">Share _name:</property>
                 <property name="use_underline">True</property>
-                <property name="mdorynic_widget">entry_share_name</property>
+                <property name="mnemonic_widget">entry_share_name</property>
                 <property name="xalign">0</property>
               </object>
               <packing>
@@ -185,7 +185,7 @@
                 <property name="can_focus">False</property>
                 <property name="label" translatable="yes">Co_mment:</property>
                 <property name="use_underline">True</property>
-                <property name="mdorynic_widget">entry_share_comment</property>
+                <property name="mnemonic_widget">entry_share_comment</property>
                 <property name="xalign">0</property>
               </object>
               <packing>

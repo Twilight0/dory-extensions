@@ -230,7 +230,7 @@ repair_dialog_menu_item_new(GList* files)
 }
 
 static char*
-get_filename_without_mdorynic(const char* filename)
+get_filename_without_mnemonic(const char* filename)
 {
     GString* str;
 
@@ -256,7 +256,7 @@ rename_menu_item_new(const char* name, GFile* file, int menu_index,
     gchar* tooltip;
     DoryMenuItem* item;
 
-    filename = get_filename_without_mdorynic(name);
+    filename = get_filename_without_mnemonic(name);
     
     g_snprintf(id, sizeof(id), "Repairer::rename_as_%d", menu_index);
     if (is_submenu)

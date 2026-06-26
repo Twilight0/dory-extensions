@@ -27,7 +27,7 @@
                     <property name="xalign">0</property>
                     <property name="label" translatable="yes">Select _encoding:</property>
                     <property name="use_underline">True</property>
-                    <property name="mdorynic_widget">encoding_combo</property>
+                    <property name="mnemonic_widget">encoding_combo</property>
                   </object>
                   <packing>
                     <property name="position">0</property>
