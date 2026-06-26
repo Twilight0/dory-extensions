@@ -14,6 +14,6 @@ setup( packages=[],
     license      = "GPL3",
 
     data_files   = [
-        ('/usr/share/dory-python/extensions', ['dory-extension/dory-git-tags.py'])
+        ('/usr/share/dory-python/extensions', ['dory-extension/dory_git_tags.py'])
     ]
 )
